@@ -13,16 +13,38 @@
 </head>
 
 <body>
+    <!-- Enquiry Form -->
+    <div class="sticky-form">
+        <button id="enquire-btn" class="enquire-btn">Enquire Now</button>
+        <div id="enquire-container" class="enquire-container">
+            <form action="" class="enquire-form">
+                <input type="text" id="name" name="name" placeholder=" ">
+                <label for="name">Name</label>
+                <input type="text" id="phone" name="phone" placeholder=" ">
+                <label for="phone">Phone</label>
+                <input type="email" id="email" name="email" placeholder=" ">
+                <label for="email">Email</label>
+                <select>
+                    <option value="" disabled selected>Select your Project</option>
+                    <option value="dummy1">Dummy 1</option>
+                    <option value="dummy2">Dummy 2</option>
+                    <option value="dummy3">Dummy 3</option>
+                </select>
+                <input type="text" id="message" name="message" placeholder=" ">
+                <label for="message">Message</label>
+                <button type="button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- NavBar -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container"><a class="navbar-brand" href="#">Logo</a><button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="#">Logo</a>
                 <div class="button"><a class="btn-open" href="#"></a></div>
             </div>
         </nav>
     </div>
+    <!-- Menu -->
     <div class="overlay">
         <div class="wrap">
             <ul class="wrap-nav">
@@ -62,6 +84,7 @@
                 </a></div>
         </div>
     </div>
+    <!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -88,6 +111,41 @@
                     class="sr-only">Next</span></a>
         </div>
     </div>
+    <!-- OverView -->
+    <div class="container">
+        <div class="row overview-container">
+            <div class="col-sm-12 col-lg-6">
+                <img src="./images/pexels-photomix-company-101808.jpg" alt="building with key" class="overview-img">
+            </div>
+            <div class="col-sm-12 col-lg-6 overview-content">
+                <h3 ml-0>Navya Overview</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, placeat consectetur quasi libero eos
+                    at quia doloribus itaque accusamus, molestias quaerat facilis, velit ullam? Laboriosam veritatis
+                    incidunt laudantium ipsa dolor consequatur cumque mollitia illo, pariatur vitae dolorem praesentium
+                    assumenda culpa. Inventore quia reprehenderit corrupti perspiciatis, autem accusantium possimus
+                    exercitationem aliquid doloribus voluptatibus voluptas. Inventore soluta hic perspiciatis pariatur,
+                    quia totam unde atque aliquid dignissimos. Quam tenetur quae eius hic aliquid?</p>
+            </div>
+        </div>
+    </div>
+    <!-- Projects commercial or residential -->
+    <!-- <div class="container-fluid"> -->
+    <div class="res-and-comm-cont">
+        <div class="">
+            <div class="media">
+                <img class="com-or-res-img" src="./images/pexels-francesco-ungaro-4322027.jpg" alt="Residential" />
+            </div>
+        </div>
+        <div class="">
+            <div class="media">
+                <img class="com-or-res-img" src="./images/pexels-matthew-simmonds-1570404.jpg" alt="commercial" />
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- Moto and Philosophy -->
+    <!-- Infographics -->
+    <!-- Contact us -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
