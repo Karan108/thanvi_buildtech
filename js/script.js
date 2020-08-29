@@ -31,8 +31,12 @@ $(document).ready(function () {
         open = false;
     });
     // project type hover
-    $('.res').on('hover', () => {
-
+    $('.media::after').hover(() => {
+        $('.media::after').css('display', 'none');
+    })
+    $('.com').hover(() => {
+        console.log("hovering com");
+        $('.media::after').css('display', 'none');
     })
 });
 
