@@ -30,6 +30,10 @@ $(document).ready(function () {
         $(".button a").toggleClass('btn-open').toggleClass('btn-close');
         open = false;
     });
+    // project type hover
+    $('.res').on('hover', () => {
+
+    })
 });
 
 
