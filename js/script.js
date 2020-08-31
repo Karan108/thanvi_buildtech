@@ -16,6 +16,15 @@
 
 // fire the menu button
 $(document).ready(function () {
+    $('.hero-slider').owlCarousel({
+        items: 1,
+        nav: true,
+        dots: false,
+        animateOut: 'fadeOut',
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        loop: true
+    });
+
     $(".button a").click(function () {
         $(".overlay").fadeToggle(200);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
@@ -37,7 +46,17 @@ $(document).ready(function () {
     $('.com').hover(() => {
         console.log("hovering com");
         $('.media::after').css('display', 'none');
-    })
+    });
+
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 });
-
-

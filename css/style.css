@@ -50,7 +50,7 @@ label {
     transform: translate(0, -2.75rem);
 }
 
-input {
+.sticky-form input {
     width: 100%;
     margin-top: 1.5rem;
     padding: 0.25rem;
@@ -60,7 +60,7 @@ input {
     background: none;
 }
 
-input:focus {
+.sticky-form input:focus {
     outline: none;
     /* cursor: auto; */
 }
@@ -167,7 +167,7 @@ button:focus {
 }
 
 .btn-open:hover:after {
-    color: #81ecec;
+    color: #2b90d9;
 }
 
 .btn-close:after {
@@ -181,7 +181,7 @@ button:focus {
 }
 
 .btn-close:hover:after {
-    color: #81ecec;
+    color: #2b90d9;
 }
 
 /*overlay*/
@@ -218,7 +218,7 @@ button:focus {
 }
 
 .wrap ul.wrap-nav li a {
-    color: #81ecec;
+    color: #2b90d9;
     display: block;
     padding: 8px 0;
     text-decoration: none;
@@ -248,7 +248,7 @@ button:focus {
 }
 
 .wrap ul.wrap-nav ul li a:hover {
-    color: #81ecec;
+    color: #2b90d9;
 }
 
 .social {
@@ -264,7 +264,7 @@ button:focus {
 }
 
 .social p a {
-    color: #81ecec;
+    color: #2b90d9;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -327,79 +327,200 @@ button:focus {
 }
 
 /* Carousel */
-#myCarousel {
-    height: auto;
-    max-width: 100%;
+
+.owl-nav-custom {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
 }
 
-#myCarousel img {
-    height: auto;
-    max-width: 100%;
-    /* opacity: 100%; */
-    object-fit: contain;
-}
-
-/* Overview */
-.overview-container {
-    padding: 10rem 0 10rem 0;
-    height: 100vh;
-}
-
-.overview-img {
+.owl-nav-custom .owl-nav {
+    position: absolute;
+    top: calc(50% - 1.75rem);
+    left: 2.5rem;
+    width: calc(100% - 5rem);
+    height: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    height: 20rem;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
-.overview-content {
+@media (max-width: 991.98px) {
+    .owl-nav-custom .owl-nav {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .owl-nav-custom .owl-nav {
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        top: auto;
+        bottom: 1.75rem;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.owl-nav-custom .owl-nav .owl-prev,
+.owl-nav-custom .owl-nav .owl-next {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(0, 0, 0, 0.5) !important;
+    line-height: 3.5rem !important;
+    transition: all 0.3s;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.owl-nav-custom .owl-nav .owl-prev.disabled,
+.owl-nav-custom .owl-nav .owl-next.disabled {
+    opacity: 0;
+    z-index: -1;
+}
+
+.owl-nav-custom .owl-nav .owl-prev span,
+.owl-nav-custom .owl-nav .owl-next span {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.owl-nav-custom .owl-nav .owl-prev:hover,
+.owl-nav-custom .owl-nav .owl-next:hover {
+    background: #2b90d9 !important;
+}
+
+@media (min-width: 992px) {
+
+    .owl-nav-custom .owl-nav .owl-prev::before,
+    .owl-nav-custom .owl-nav .owl-next::before {
+        content: 'Prev';
+        width: 5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 0;
+        right: -5rem;
+        background: rgba(0, 0, 0, 0.8);
+        line-height: 3.3rem;
+        transition: all 0.3s;
+        text-align: center;
+        -webkit-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+    }
+}
+
+.owl-nav-custom .owl-nav .owl-prev:hover::before,
+.owl-nav-custom .owl-nav .owl-next:hover::before {
+    -webkit-transform: none;
+    transform: none;
+}
+
+@media (min-width: 992px) {
+    .owl-nav-custom .owl-nav .owl-next::before {
+        content: 'Next';
+        right: auto;
+        left: -5rem;
+        -webkit-transform-origin: top right;
+        transform-origin: top right;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #2b90d9;
+}
+
+.owl-carousel .owl-item img {
+    width: unset;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 1.5rem;
+}
+
+.hero-slide,
+.hero {
+    position: relative;
+}
+
+.hero-slide::before,
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+    display: block;
+}
+
+.hero-slide {
+    position: relative;
+    min-height: 650px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 991.98px) {
+    .hero-slide {
+        min-height: auto;
+    }
+}
+
+.owl-nav {
+    color: #fff;
+}
+
+/* overview */
+/* The Image container */
+.img-hover-zoom {
+    height: 300px;
+    /* Modify this according to your need */
+    overflow: hidden;
+    /* Removing this will break the effects */
+}
+
+.img-hover-zoom::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(150%);
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+    filter: brightness(100%);
+    transform: scale(3);
 }
 
 /* Commercial and residential building */
-
-.media {
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-
-}
-
-.media::after {
-    content: '';
-    /* background: #00000052; */
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.overlay {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bg_project_img {
-    height: 100%;
-    width: 50vw;
-    object-fit: cover;
-}
-
-.res-com-text {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-}
-
-.nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
-}
 
 .projectTypes-button {
     border: none;
@@ -409,7 +530,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: rgb(230, 230, 236, 0.3);
+    background-color: rgba(230, 230, 236, 0.3);
     cursor: pointer;
 }
 
@@ -446,7 +567,8 @@ button:focus {
 
 .res:hover .project-images,
 .com:hover .project-images {
-    opacity: 0.3;
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .res:hover .middle,
@@ -455,8 +577,224 @@ button:focus {
 }
 
 .text {
-    background-color: #4CAF50;
+    background-color: transparent;
     color: white;
+    display: flex;
     font-size: 16px;
     padding: 16px 32px;
+    z-index: 99;
+}
+
+/* wave */
+.test {
+    background-color: rgb(0, 255, 255);
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wave-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+/* Moto and Philosophy */
+
+/* footer */
+.footer-top {
+    position: relative;
+    padding: 60px 0;
+    /* background: #333; */
+    /* background: #000; */
+    /* background-image: url('https: //picsum.photos/id/411/1370/400'); */
+    object-fit: cover;
+    text-align: left;
+    color: #aaa;
+}
+
+.footer-top::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 99;
+    background-color: rgba(0, 0, 0);
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.footer-about img.logo-footer {
+    max-width: 74px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* img {
+    max-width: 100%;
+} */
+.footer-contact i {
+    padding-right: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    color: #777;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+.footer-social a:hover,
+.footer-about p a:hover,
+.footer-contact p a:hover {
+    color: rgb(209, 206, 206);
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    background: #444;
+    text-align: left;
+    color: #aaa;
+}
+
+.footer-about p a {
+    color: #aaa;
+    border-bottom: 1px dashed #666;
+    text-decoration: none;
+}
+
+.footer-contact p a {
+    color: #aaa;
+    border-bottom: 1px dashed #666;
+    text-decoration: none;
+}
+
+/* footer form */
+
+.footer-form input {
+    background: transparent;
+    margin: 5px;
+    border: 1px solid #aaa;
+    color: #fff;
+}
+
+.footer-form input::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    padding: 2px;
+}
+
+
+/* test */
+/* 
+The container box is relative so we can position stuff inside of it 
+*/
+.image-box {
+    position: relative;
+}
+
+
+.image-box__background,
+.image-box__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* 
+  The background image div sizes and positions the background itself.
+  It's also at the bottom-most position in our "div stack" (z-index 1)
+  
+  We set the image url via a CSS custom property, that's set via the style attribute in our HTML
+  */
+.image-box__background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: var(--image-url);
+
+    z-index: 1
+}
+
+/* 
+  The overlay div is just a colored element with some opacity.
+  It's above the background image in our stack, so it appears to 
+  darken the image 
+  */
+.image-box__overlay {
+    background: rgba(0, 0, 0, 0.8);
+
+    z-index: 2;
+}
+
+/* 
+  The content div is at the top of our stack. 
+  We'd probably add some padding or flexbox properties here as well, 
+  to place the content appropriately
+  */
+.image-box__content {
+    position: relative;
+
+    z-index: 3;
+    padding: 40px;
+    color: white;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ol.list-numbers {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: my-awesome-counter;
+}
+
+ol.list-numbers li {
+    counter-increment: my-awesome-counter;
+    position: relative;
+    padding-left: 3.5rem;
+}
+
+ol.list-numbers li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #007bff;
 }
