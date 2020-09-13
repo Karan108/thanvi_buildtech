@@ -25,28 +25,24 @@
         <button id="enquire-btn" class="enquire-btn">Enquire Now</button>
         <div id="enquire-container" class="enquire-container">
             <form action="" class="enquire-form">
-                <input type="text" id="name" name="name" placeholder=" ">
-                <label for="name">Name</label>
-                <input type="text" id="phone" name="phone" placeholder=" ">
-                <label for="phone">Phone</label>
-                <input type="email" id="email" name="email" placeholder=" ">
-                <label for="email">Email</label>
-                <select>
+                <input type="text" id="name" name="name" placeholder="Name" class="enquire-child">
+                <input type="text" id="phone" name="phone" placeholder="Phone" class="enquire-child">
+                <input type="email" id="email" name="email" placeholder="Email" class="enquire-child">
+                <select class="enquire-child">
                     <option value="" disabled selected>Select your Project</option>
                     <option value="dummy1">Dummy 1</option>
                     <option value="dummy2">Dummy 2</option>
                     <option value="dummy3">Dummy 3</option>
                 </select>
-                <input type="text" id="message" name="message" placeholder=" ">
-                <label for="message">Message</label>
-                <button class="sticky-form-button" type="button">Submit</button>
+                <input type="text" id="message" name="message" placeholder="Message" class="enquire-child">
+                <button class="sticky-form-button" type="button">Submit</button class="enquire-child">
             </form>
         </div>
     </div>
     <!-- NavBar -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container"><a class="navbar-brand" href="#">Logo</a>
+            <div class="container"><a class="navbar-brand" href="index.html">Logo</a>
                 <div class="button"><a class="btn-open" href="#"></a></div>
             </div>
         </nav>
@@ -59,7 +55,7 @@
                     <ul>
                         <li><a href="#">About Company</a></li>
                         <li><a href="#">Designers</a></li>
-                        <li><a href="#">Developers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="#">Pets</a></li>
                     </ul>
                 </li>
@@ -94,7 +90,7 @@
 
     <!-- Carousel -->
     <!-- Hero Slider -->
-    <section>
+    <section class="carousel-owl" data-aos="fade-down">
         <div class="owl-carousel owl-theme-default hero-slider owl-nav-custom">
             <!-- Hero Slide-->
             <div class="hero-slide bg-size bg-center py-5"
@@ -196,14 +192,14 @@
     </div> -->
     <!-- Project types -->
     <section>
-        <div class="project-types" data-aos="fade-left">
-            <div class="res">
+        <div class="project-types">
+            <div class="res" data-aos="fade-right">
                 <img src="images/pexels-jovydas-pinkevicius-2462015.jpg" class="project-images" alt="">
                 <div class="middle">
                     <div class="text"><button class="projectTypes-button">View All Projects</button></div>
                 </div>
             </div>
-            <div class="com">
+            <div class="com" data-aos="fade-left">
                 <img src="images/pexels-mihis-alex-76764.jpg" class="project-images" alt="">
                 <div class="middle">
                     <div class="text"><button class="projectTypes-button">View All Projects</button></div>
@@ -212,7 +208,7 @@
         </div>
     </section>
     <!-- Divider Section -->
-    <section class="bg-cover bg-cente" data-aos="fade-left">
+    <section class="bg-cover bg-cente mt-4" data-aos="fade-left">
         <div class="container p-4">
             <div class="row align-items-center">
                 <div class="col-lg-7 text-center text-lg-left mb-4 mb-lg-0">
@@ -270,7 +266,6 @@
         </div>
     </section>
     <!-- Infographics -->
-    <!-- <footer class="bg-dark info"> -->
     <div class="bg-primary py-5 text-white" id="number-counter">
         <div class="container" data-aos="fade-right">
             <div class="row">
@@ -302,52 +297,7 @@
         </div>
     </div>
     <!-- Contact us -->
-    <!-- Footer -->
     <footer>
-        <!-- <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-lg-4 footer-about wow fadeInUp animated"
-                        style="visibility: visible; animation-name: fadeInUp;"> -->
-        <!-- <h3>LOGO</h3> -->
-        <!-- <img class="logo-footer" src="assets/img/logo.png" alt="logo-footer" data-at2x="assets/img/logo.png"> -->
-        <!-- <p>
-                            We are a young company always looking for new and creative ideas to help you with our
-                            products in your everyday work.
-                        </p>
-                        <p><a href="#">Our Team</a></p> -->
-        <!-- <h3>Enquire</h3>
-                        <form action="" class="footer-form d-flex flex-column ">
-                            <input type="text" id="name" name="name" placeholder="Name" class="w-75 p-2">
-                            <input type="text" id="phone" name="phone" placeholder="Phone" class="w-75 p-2">
-                            <input type="email" id="email" name="email" placeholder="Email" class="w-75 p-2">
-                            <button class="w-50 p-2 ml-1" style="cursor: pointer;" type="button">Submit&nbsp;<i
-                                    class="fa fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                    <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown animated"
-                        style="visibility: visible; animation-name: fadeInDown;">
-                        <h3>Contact</h3>
-                        <p><i class="fa fa-map-marker"></i> Via Rossini 10, 10136 Turin Italy</p>
-                        <p><i class="fa fa-phone"></i> Phone: (0039) 333 12 68 347</p>
-                        <p><i class="fa fa-envelope"></i> Email: <a href="mailto:hello@domain.com">hello@domain.com</a>
-                        </p>
-                        <p><i class="fa fa-skype"></i> Skype: you_online</p>
-                    </div>
-                    <div class="col-md-4 col-lg-3 footer-social wow fadeInUp animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <h3>Follow us</h3>
-                        <p>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="image-box">
             <div class="image-box__background" style="--image-url: url(https://picsum.photos/id/411/1370/400)">
             </div>

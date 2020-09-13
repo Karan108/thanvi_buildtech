@@ -26,8 +26,26 @@ $(document).ready(function () {
 
     // Close enquiry form
     $('#enquire-btn').click(() => {
-        $('#enquire-container').fadeToggle(300);
+        toggleForm();
     });
+    function toggleForm() {
+        $("#enquire-container").animate({
+            width: "toggle"
+        }, 300);
+        $('#enquire-btn').toggleClass('closeOpen');
+    }
+    // window.onscroll = fun;
+
+    // function fun() {
+    //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //         $("#enquire-container").animate({
+    //             width: "toggle"
+    //         }, 300);
+    //         $('#enquire-btn').toggleClass('closeOpen');
+    //     } else {
+    //         console.log("object no");
+    //     }
+    // }
 
     // project type hover
     $('.media::after').hover(() => {
@@ -58,13 +76,3 @@ $(document).ready(function () {
 
 
 
-// window.onscroll = fun;
-
-// function fun() {
-//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//         console.log("object");
-//         btn.style.top = "35%";
-//     } else {
-//         console.log("object no");
-//     }
-// }
