@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    // GSAP animation for starting animation
+    const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
+
+    tl.to('.intro-start-inner-text', { y: '0%', duration: 1, stagger: 0.25 });
+    tl.to('.slider-start', { y: '-100%', duration: 1.5, delay: 0.5 });
+    tl.to('.intro-start', { y: '-100%', duration: 1 }, "-=1.2");
+    tl.fromTo('.navbar', { opacity: 0 }, { opacity: 1, duration: 1 });
+    tl.fromTo('.sticky-form', { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
     // Owl carousel
     $('.hero-slider').owlCarousel({
@@ -34,18 +42,6 @@ $(document).ready(function () {
         }, 300);
         $('#enquire-btn').toggleClass('closeOpen');
     }
-    // window.onscroll = fun;
-
-    // function fun() {
-    //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    //         $("#enquire-container").animate({
-    //             width: "toggle"
-    //         }, 300);
-    //         $('#enquire-btn').toggleClass('closeOpen');
-    //     } else {
-    //         console.log("object no");
-    //     }
-    // }
 
     // project type hover
     $('.media::after').hover(() => {
@@ -72,7 +68,7 @@ $(document).ready(function () {
         });
     }, { offset: '50%' });
 });
-// const btn = document.getElementById('enquire-btn');
+
 
 
 

@@ -20,11 +20,32 @@
 </head>
 
 <body>
+    <!-- starting animation -->
+    <div class="intro-start">
+        <div class="intro-start-text">
+            <h1 class="intro-start-hide">
+                <span class="intro-start-inner-text">
+                    Creating Innovation
+                </span>
+            </h1>
+            <h1 class="intro-start-hide">
+                <span class="intro-start-inner-text">
+                    For Customers
+                </span>
+            </h1>
+            <h1 class="intro-start-hide">
+                <span class="intro-start-inner-text">
+                    People
+                </span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider-start"></div>
     <!-- Enquiry Form -->
     <div class="sticky-form">
         <button id="enquire-btn" class="enquire-btn">Enquire Now</button>
         <div id="enquire-container" class="enquire-container">
-            <form action="" class="enquire-form">
+            <form action="https://formspree.io/xgepevqo" method="POST" class="enquire-form">
                 <input type="text" id="name" name="name" placeholder="Name" class="enquire-child">
                 <input type="text" id="phone" name="phone" placeholder="Phone" class="enquire-child">
                 <input type="email" id="email" name="email" placeholder="Email" class="enquire-child">
@@ -35,7 +56,7 @@
                     <option value="dummy3">Dummy 3</option>
                 </select>
                 <input type="text" id="message" name="message" placeholder="Message" class="enquire-child">
-                <button class="sticky-form-button" type="button">Submit</button class="enquire-child">
+                <button class="sticky-form-button enquire-child" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -53,7 +74,7 @@
             <ul class="wrap-nav">
                 <li><a href="#">About</a>
                     <ul>
-                        <li><a href="#">About Company</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </li>
@@ -88,7 +109,8 @@
 
     <!-- Carousel -->
     <!-- Hero Slider -->
-    <section class="carousel-owl" data-aos="fade-down">
+    <section class="carousel-owl">
+        <!-- <section class="carousel-owl" data-aos="fade-down"> -->
         <div class="owl-carousel owl-theme-default hero-slider owl-nav-custom">
             <!-- Hero Slide-->
             <div class="hero-slide bg-size bg-center py-5"
@@ -306,11 +328,12 @@
                         <div class="col-md-4 col-lg-4 footer-about wow fadeInUp animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <h3>Enquire</h3>
-                            <form action="" class="footer-form d-flex flex-column ">
+                            <form action="https://formspree.io/mjvpvkzj" class="footer-form d-flex flex-column"
+                                method="POST">
                                 <input type="text" id="name" name="name" placeholder="Name" class="w-75 p-2">
                                 <input type="text" id="phone" name="phone" placeholder="Phone" class="w-75 p-2">
                                 <input type="email" id="email" name="email" placeholder="Email" class="w-75 p-2">
-                                <button class="w-50 p-2 ml-1" style="cursor: pointer;" type="button">Submit&nbsp;<i
+                                <button class="w-50 p-2 ml-1" style="cursor: pointer;" type="submit">Submit&nbsp;<i
                                         class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
@@ -363,6 +386,9 @@
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script>
         AOS.init({

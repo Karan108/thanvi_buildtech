@@ -29,7 +29,7 @@
     <div class="sticky-form">
         <button id="enquire-btn" class="enquire-btn">Enquire Now</button>
         <div id="enquire-container" class="enquire-container">
-            <form action="" class="enquire-form">
+            <form action="https://formspree.io/xgepevqo" method="POST" class="enquire-form">
                 <input type="text" id="name" name="name" placeholder="Name" class="enquire-child">
                 <input type="text" id="phone" name="phone" placeholder="Phone" class="enquire-child">
                 <input type="email" id="email" name="email" placeholder="Email" class="enquire-child">
@@ -40,7 +40,7 @@
                     <option value="dummy3">Dummy 3</option>
                 </select>
                 <input type="text" id="message" name="message" placeholder="Message" class="enquire-child">
-                <button class="sticky-form-button" type="button">Submit</button class="enquire-child">
+                <button class="sticky-form-button" type="submit">Submit</button class="enquire-child">
             </form>
         </div>
     </div>
@@ -57,8 +57,8 @@
             <ul class="wrap-nav">
                 <li><a href="#">About</a>
                     <ul>
-                        <li><a href="#">About Company</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Services</a>
@@ -78,7 +78,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="social"><a href="http://mario-loncarek.from.hr/">
+            <div class="social"><a href="#">
                     <div class="social-icon"><i class="fa fa-facebook"></i></div>
                 </a><a href="#">
                     <div class="social-icon"><i class="fa fa-twitter"></i></div>
@@ -90,7 +90,7 @@
         </div>
     </div>
     <!-- photo bg -->
-    <section class="hero bg-cover bg-position py-4" style="background: url(images/mailbox-1819966_1280.jpg)">
+    <section class="hero bg-cover bg-position py-4" style="background: url(images/pexels-ann-h-1921957.jpg)">
         <div class="container py-5 index-forward text-white">
             <h1>Contact Us</h1>
             <!-- Breadcrumb-->
@@ -186,11 +186,12 @@
                         <div class="col-md-4 col-lg-4 footer-about wow fadeInUp animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <h3>Enquire</h3>
-                            <form action="" class="footer-form d-flex flex-column ">
+                            <form action="https://formspree.io/mjvpvkzj" method="POST"
+                                class="footer-form d-flex flex-column ">
                                 <input type="text" id="name" name="name" placeholder="Name" class="w-75 p-2">
                                 <input type="text" id="phone" name="phone" placeholder="Phone" class="w-75 p-2">
                                 <input type="email" id="email" name="email" placeholder="Email" class="w-75 p-2">
-                                <button class="w-50 p-2 ml-1" style="cursor: pointer;" type="button">Submit&nbsp;<i
+                                <button class="w-50 p-2 ml-1" style="cursor: pointer;" type="submit">Submit&nbsp;<i
                                         class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
@@ -243,6 +244,9 @@
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script>
         AOS.init({
