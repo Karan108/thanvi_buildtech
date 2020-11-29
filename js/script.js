@@ -10,14 +10,14 @@ $(document).ready(function () {
     tl.fromTo('.sticky-form', { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
     // Owl carousel
-    $('.hero-slider').owlCarousel({
-        items: 1,
-        nav: true,
-        dots: false,
-        animateOut: 'fadeOut',
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        loop: true
-    });
+    // $('.hero-slider').owlCarousel({
+    //     items: 1,
+    //     nav: true,
+    //     dots: false,
+    //     animateOut: 'fadeOut',
+    //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    //     loop: true
+    // });
 
     // Menu button
     $(".button a").click(function () {
@@ -67,6 +67,21 @@ $(document).ready(function () {
             });
         });
     }, { offset: '50%' });
+
+    $("img").click(function () {
+        var t = $(this).attr("src");
+        $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
+        $("#myModal").modal();
+    });
+
+    $("video").click(function () {
+        var v = $("video > source");
+        var t = v.attr("src");
+        $(".modal-body").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");
+        $("#myModal").modal();
+    });
+
+
 });
 
 
