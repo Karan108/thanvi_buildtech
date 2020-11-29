@@ -1,24 +1,4 @@
 $(document).ready(function () {
-
-    // GSAP animation for starting animation
-    const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
-
-    tl.to('.intro-start-inner-text', { y: '0%', duration: 1, stagger: 0.25 });
-    tl.to('.slider-start', { y: '-100%', duration: 1.5, delay: 0.5 });
-    tl.to('.intro-start', { y: '-100%', duration: 1 }, "-=1.2");
-    tl.fromTo('.navbar', { opacity: 0 }, { opacity: 1, duration: 1 });
-    tl.fromTo('.sticky-form', { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
-
-    // Owl carousel
-    // $('.hero-slider').owlCarousel({
-    //     items: 1,
-    //     nav: true,
-    //     dots: false,
-    //     animateOut: 'fadeOut',
-    //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-    //     loop: true
-    // });
-
     // Menu button
     $(".button a").click(function () {
         $(".overlay").fadeToggle(200);
@@ -43,15 +23,6 @@ $(document).ready(function () {
         $('#enquire-btn').toggleClass('closeOpen');
     }
 
-    // project type hover
-    $('.media::after').hover(() => {
-        $('.media::after').css('display', 'none');
-    })
-    $('.com').hover(() => {
-        console.log("hovering com");
-        $('.media::after').css('display', 'none');
-    });
-
     // Counter
     var countSection = $('#number-counter');
     countSection.waypoint(function () {
@@ -68,20 +39,7 @@ $(document).ready(function () {
         });
     }, { offset: '50%' });
 
-    $("img").click(function () {
-        var t = $(this).attr("src");
-        $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
-        $("#myModal").modal();
-    });
-
-    $("video").click(function () {
-        var v = $("video > source");
-        var t = v.attr("src");
-        $(".modal-body").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");
-        $("#myModal").modal();
-    });
-
-
+    new ModalVideo('.video-btn');
 });
 
 
