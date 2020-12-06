@@ -173,8 +173,8 @@ button:focus {
 }
 
 .btn-open:after {
-    color: #fff;
-    /* color: #111; */
+    /* color: #fff; */
+    color: #111;
     content: "\f0c9";
     font-family: "FontAwesome";
     transition-property: all .2s linear 0s;
