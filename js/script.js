@@ -40,6 +40,10 @@ $(document).ready(function () {
     }, { offset: '50%' });
 
     new ModalVideo('.video-btn');
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 });
 
 

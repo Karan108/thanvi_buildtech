@@ -135,30 +135,13 @@ button:focus {
     letter-spacing: 6px;
 }
 
-/* .navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-}
-
-
-.navbar-toggler {
-    background: #fff;
-} */
-
 /* Menu Button */
 
 /*styling open close button*/
 .button {
-    display: inline;
-    position: absolute;
-    right: 50px;
-    top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
     font-size: 30px;
     transition: 0.4s;
@@ -184,7 +167,7 @@ button:focus {
 }
 
 .btn-open:hover:after {
-    /* color: #2b90d9; */
+    color: #2b90d9;
 }
 
 .btn-close:after {
@@ -199,7 +182,7 @@ button:focus {
 }
 
 .btn-close:hover:after {
-    /* color: #2b90d9; */
+    color: #2b90d9;
 }
 
 /*overlay*/
@@ -579,6 +562,10 @@ ol.list-numbers li::before {
     /* z-index: 99; */
 }
 
+.hero {
+    position: relative;
+}
+
 .icon {
     width: 50px;
     height: 50px;
@@ -592,10 +579,10 @@ ol.list-numbers li::before {
     align-items: center;
 }
 
-
 .bg-cover {
     background-size: cover !important;
-    background-attachment: fixed !important;
+    /* background-attachment: fixed !important; */
+    background-position: center center !important;
 }
 
 .breadcrumb-item {
@@ -633,7 +620,6 @@ ol.list-numbers li::before {
 
 .about-body {
     font-family: Lora;
-    /* font-family: 'Open Sans', sans-serif; */
     background-image: linear-gradient(rgba(147, 236, 252, 0.301), rgba(157, 235, 192, 0.26)), url(../img/bg.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -1031,7 +1017,7 @@ p {
     }
 }
 
-/* Manyam project */
+/*  project */
 
 .-fx-image-gal {
     display: flex;
@@ -1039,13 +1025,13 @@ p {
     flex-wrap: wrap;
     margin: 20px auto;
     width: 100%;
-    max-width: 960px;
+    /* max-width: 960px; */
     justify-content: center;
 }
 
 .-fx-gal-item {
     width: 100%;
-    margin: 0px;
+    margin: 4px;
     padding: 0px;
     overflow: hidden;
 }
@@ -1058,21 +1044,8 @@ p {
     background-color: white;
 }
 
-.-fx-gal-image-thumb img {
-    width: 100%;
-    cursor: pointer;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-}
-
 .-fx-gal-image-thumb:hover img {
     cursor: pointer;
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    filter: grayscale(0%);
     transform: scale(1.5);
     transition: all 0.5s ease;
 }
@@ -1092,4 +1065,25 @@ p {
     .-fx-gal-item {
         width: 33.33%;
     }
+}
+
+/* projects bg test */
+
+.manyam-bg {
+    background-image: linear-gradient(rgba(147, 236, 252, 0.301), rgba(157, 235, 192, 0.26)), url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover
+}
+
+.row {
+    margin: 15px;
+}
+
+.dark-overlay-lighter {
+    position: relative;
+}
+
+.dark-overlay-lighter::after {
+    opacity: .85;
 }
