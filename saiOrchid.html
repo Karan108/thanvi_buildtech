@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanvi Build Tech | Sai Orchid</title>
+    <link rel="icon" href="images/site_logo.png" type="image/icon type">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,6 +16,7 @@
 </head>
 
 <body class='manyam-bg'>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
     <div class="sticky-form">
         <button id="enquire-btn" class="enquire-btn">Enquire Now</button>
         <div id="enquire-container" class="enquire-container">
@@ -78,14 +80,10 @@
         </div>
     </div>
 
-    <section class="py-5">
+    <section class="py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-lg-0">
-                    <div class="bg-primary pr-lg-3">
-                        <img src="images/8.jpg" alt="building with key" class="img-fluid w-100">
-                    </div>
-                </div>
+
                 <div class="col-lg-7 px-lg-0">
                     <div class="p-4 p-md-5 shadow bg-white">
                         <p class="h6 mb-1 text-uppercase text-primary mb-3">Sai Orchid</p>
@@ -112,13 +110,18 @@
                         </p>
                     </div>
                 </div>
+                <div class="col-lg-5 px-lg-0">
+                    <div class="bg-primary pl-lg-3">
+                        <img src="images/8.jpg" alt="building with key" class="img-fluid w-100">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="cta">
         <h2 class="d-flex justify-content-center align-items-center">Gallery</h2>
-        <div class="-fx-image-gal">
+        <div class="-fx-image-gal" data-aos="fade-right">
             <div class="-fx-gal-item">
                 <div class="-fx-gal-image-thumb" tabindex="1">
                     <a href="images/saiOrchid/sai2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -127,7 +130,7 @@
                 </div>
             </div><!-- /-fx-gal-item -->
 
-            <div class="-fx-gal-item">
+            <div class="-fx-gal-item" data-aos="fade-left">
                 <div class="-fx-gal-image-thumb" tabindex="1">
                     <a href="images/saiOrchid/sai2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                         <img src="images/saiOrchid/sai2.jpg" class="img-fluid rounded">
@@ -135,7 +138,7 @@
                 </div>
             </div><!-- /-fx-gal-item -->
 
-            <div class="-fx-gal-item">
+            <div class="-fx-gal-item" data-aos="fade-right">
                 <div class="-fx-gal-image-thumb" tabindex="1">
                     <a href="images/saiOrchid/sai3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                         <img src="images/saiOrchid/sai3.jpg" class="img-fluid rounded">
@@ -143,7 +146,7 @@
                 </div>
             </div><!-- /-fx-gal-item -->
 
-            <div class="-fx-gal-item">
+            <div class="-fx-gal-item" data-aos="fade-left">
                 <div class="-fx-gal-image-thumb" tabindex="1">
                     <a href="images/manyam/manyam4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                         <img src="images/manyam/manyam4.jpg" class="img-fluid rounded">
@@ -151,7 +154,7 @@
                 </div>
             </div><!-- /-fx-gal-item -->
 
-            <div class="-fx-gal-item">
+            <div class="-fx-gal-item" data-aos="fade-right">
                 <div class="-fx-gal-image-thumb" tabindex="1">
                     <a href="images/manyam/manyam5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                         <img src="images/manyam/manyam5.jpg" class="img-fluid rounded">
@@ -159,7 +162,7 @@
                 </div>
             </div><!-- /-fx-gal-item -->
 
-            <div class="-fx-gal-item">
+            <div class="-fx-gal-item" data-aos="fade-left">
                 <div class="-fx-gal-image-thumb" tabindex="1">
                     <a href="images/manyam/manyam6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
                         <img src="images/manyam/manyam6.jpg" class="img-fluid rounded">
@@ -170,7 +173,7 @@
     </div>
 
     <!-- Project Details-->
-    <div class="project-details container">
+    <div class="project-details container" data-aos="fade-up">
         <div id="accordion" class="accordion">
             <div class="card mb-0">
                 <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
@@ -228,83 +231,100 @@
                     </a>
                 </div>
                 <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
-                    STRUCTURE
-                    RCC framed structure built with controlled concrete.
+                    <h3>STRUCTURE</h3>
+                    <p>RCC framed structure built with controlled concrete.</p>
 
-                    Walls
-                    6" solid block masonry for external walls and 4" Solid block masonry for all internal walls with
-                    cement plastering
+                    <h3>Walls</h3>
+                    <p>6" solid block masonry for external walls and 4" Solid block masonry for all internal walls with
+                        cement plastering</p>
 
-                    Wall Finish & Ceiling
-                    External:Acrylic based paint and textured paint in selective places as per desing for exterior
-                    fascia of the building
+                    <h3>Wall Finish & Ceiling</h3>
+                    <p><strong class="text-muted">External :</strong>Acrylic based paint and textured paint in selective
+                        places as per desing for exterior
+                        fascia of the building</p>
 
-                    Internal:Oil Bound Distemper paint for all internal walls and ceiling
+                    <p><strong class="text-muted">Internal :</strong>Oil Bound Distemper paint for all internal walls
+                        and ceiling</p>
 
-                    FLOORING
-                    Lobby & Staircase : Granite flooring with inlay for lobby of all floors.
+                    <h3>FLOORING</h3>
+                    <p><strong class="text-muted">Lobby & Staircase :</strong> Granite flooring with inlay for lobby of
+                        all floors.</p>
 
-                    Living/Dining : 2'-0"*2'-0" Digital Vitrified tile flooring and 4" skirting
+                    <p><strong class="text-muted">Living/Dining :</strong> 2'-0"*2'-0" Digital Vitrified tile flooring
+                        and 4" skirting</p>
 
-                    Bed rooms & kitchen:Vitrified tile flooring and 4" skirtng
+                    <p><strong class="text-muted">Bed rooms & kitchen :</strong>Vitrified tile flooring and 4" skirtng
+                    </p>
 
-                    Balcony & Utility : Antiskid ceramic tile flooring and glazed ceramic tile dadoing in Utility upto
-                    sill level
+                    <p><strong class="text-muted">Balcony & Utility :</strong> Antiskid ceramic tile flooring and glazed
+                        ceramic tile dadoing in Utility upto
+                        sill level</p>
 
-                    Toilets: Antiskid ceramic tile flooring and glazed ceramic tile dadoing up to dooor height and
-                    designer tile dado for master bed room toilet
+                    <p><strong class="text-muted">Toilets:</strong> Antiskid ceramic tile flooring and glazed ceramic
+                        tile dadoing up to dooor height and
+                        designer tile dado for master bed room toilet</p>
 
-                    Kitchen
-                    Counter :30 mm thick Granite platform.
+                    <h3>Kitchen</h3>
+                    <p><strong class="text-muted">Counter :</strong>30 mm thick Granite platform.</p>
 
-                    Sink : Single bowl SS sink with drain board.
+                    <p><strong class="text-muted">Sink :</strong> Single bowl SS sink with drain board.</p>
 
-                    Water purifier :Provision for water purified above kitchen sink with 5amp power point.
+                    <p><strong class="text-muted">Water purifier :</strong>Provision for water purified above kitchen
+                        sink with 5amp power point.</p>
 
-                    Dado: :Glazed ceramic tile dadoing of 2'-0" height above kitchen platform.
+                    <p><strong class="text-muted">Dado :</strong>Glazed ceramic tile dadoing of 2'-0" height above
+                        kitchen platform.</p>
 
                     All Toilets
-                    Wash basin :Counter top wash basin Hindware or equivalent with polished granite in bathrooms and
-                    dining area.
+                    <p><strong class="text-muted">Wash basin :</strong> Counter top wash basin Hindware or equivalent
+                        with polished granite in bathrooms and
+                        dining area.</p>
 
-                    Sanitary ware :Duel flush EWC with for all toilets, Hindware or equivalent
+                    <p><strong class="text-muted">Sanitary ware :</strong> Duel flush EWC with for all toilets, Hindware
+                        or equivalent</p>
 
-                    Fixture & Fitings : Hot & cold mixer unit for shower CP fixture of Jaguar or equivalent
+                    <p><strong class="text-muted">Fixture & Fitings :</strong> Hot & cold mixer unit for shower CP
+                        fixture of Jaguar or equivalent</p>
 
                     Doors & windows
-                    Main Door : Good quality Teak wood door frame with architrave melamine polish and pre-molded
-                    Engineered door shutter with brass hardware.
+                    <p><strong class="text-muted">Main Door :</strong> Good quality Teak wood door frame with architrave
+                        melamine polish and pre-molded
+                        Engineered door shutter with brass hardware.</p>
 
-                    Internal Doors :Solid wooden frame with Flush shutter with enamel painting and powder coated
-                    hardware.
+                    <p><strong class="text-muted">Internal Doors :</strong> Solid wooden frame with Flush shutter with
+                        enamel painting and powder coated
+                        hardware.</p>
 
-                    Toilet doors : Solid wooden frame with water proof flush shutter with enamel painting and powder
-                    coated hardware.
+                    <p><strong class="text-muted">Toilet doors :</strong> Solid wooden frame with water proof flush
+                        shutter with enamel painting and powder
+                        coated hardware.</p>
 
-                    Windows :rawing/Living & Other Windows - Three track Aluminium sliding windows with clear glass, MS
-                    grill and shutter with mosquito mesh Aluminium ventilators for all toilets
+                    <p><strong class="text-muted">Windows :</strong> rawing/Living & Other Windows - Three track
+                        Aluminium sliding windows with clear glass, MS
+                        grill and shutter with mosquito mesh Aluminium ventilators for all toilets</p>
 
-                    ELECTRICAL
-                    Fire resistant Electrical wires of Anchor or equivalent
-                    Elegant modular elecrrical switches of Anchor or Great White or equivalent
-                    One earth leakage circuit breaker (ELCB) in every apartment & miniature circuit breaker (MCB) for
-                    lighting and power circuits
-                    Power supply from BESCOM of 3Kw for all flats will be provided
-                    Points for Water purifier, Exhaust fan, Microwave, Mixer grinder and Refrigerator in kitchen
-                    Washing machine point in utility
-                    Electrical geyser point and Exhaust fan point in all bathrooms
-                    100% DG power backup for all the common and essential services
-                    1.0 KW DG Power back up for all the flats
-                    One AC point in 2 BHK units and conduit provision for the other bed room.
-                    TV point in living and Master bed room.
+                    <h3>ELECTRICAL</h3>
+                    <p>Fire resistant Electrical wires of Anchor or equivalent
+                        Elegant modular elecrrical switches of Anchor or Great White or equivalent
+                        One earth leakage circuit breaker (ELCB) in every apartment & miniature circuit breaker (MCB)
+                        for
+                        lighting and power circuits
+                        Power supply from BESCOM of 3Kw for all flats will be provided
+                        Points for Water purifier, Exhaust fan, Microwave, Mixer grinder and Refrigerator in kitchen
+                        Washing machine point in utility
+                        Electrical geyser point and Exhaust fan point in all bathrooms
+                        100% DG power backup for all the common and essential services
+                        1.0 KW DG Power back up for all the flats
+                        One AC point in 2 BHK units and conduit provision for the other bed room.
+                        TV point in living and Master bed room.</p>
 
-                    Communications
-                    Intercom and telephone points in living room
-                    CCTV
+                    <h3>Communications</h3>
+                    <p>Intercom and telephone points in living room
+                        CCTV</p>
 
-                    Others
-                    Lift : Six numbers Six-passenger Lifts with ARD facility
-                    Water treatment plant
+                    <h3>Others</h3>
+                    <p><strong class="text-muted">Lift :</strong> Six numbers Six-passenger Lifts with ARD facility
+                        Water treatment plant</p>
                 </div>
                 <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
                     href="#collapseThree">
