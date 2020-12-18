@@ -192,8 +192,8 @@ button:focus {
 }
 
 .btn-open:after {
-    /* color: #fff; */
-    color: #111;
+    color: #fff;
+    /* color: #111; */
     content: "\f0c9";
     font-family: "FontAwesome";
     transition-property: all .2s linear 0s;
@@ -777,9 +777,9 @@ p {
     }
 }
 
-.bg-primary {
-    /* background-color: #bfc9ce !important */
-}
+/* .bg-primary {
+    background-color: #bfc9ce !important
+} */
 
 .font-weight-light {
     font-weight: 100 !important
@@ -1117,4 +1117,9 @@ p {
 
 .project-details {
     margin: 40px auto;
+}
+
+/* projects para */
+.projects-para {
+    line-height: 2;
 }
