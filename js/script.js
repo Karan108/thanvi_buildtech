@@ -39,12 +39,14 @@ $(document).ready(function () {
         });
     }, { offset: '50%' });
 
-    new ModalVideo('.video-btn');
+    // new ModalVideo('.video-btn');
+    // light box
     $(document).on("click", '[data-toggle="lightbox"]', function (event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
 
+    // back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('#scroll').fadeIn();
