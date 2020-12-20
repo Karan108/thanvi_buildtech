@@ -450,14 +450,7 @@ button:focus {
     text-decoration: none;
 }
 
-@media (max-width:992px) {
-    .footer-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
+@media (max-width:992px) {}
 
 /* footer form */
 
