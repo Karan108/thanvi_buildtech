@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanvi Build Tech | Projects</title>
+    <link rel="icon" href="images/site_logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <!-- Enquiry Form -->
+    <div class="sticky-form">
+        <button id="enquire-btn" class="enquire-btn">Enquire Now</button>
+        <div id="enquire-container" class="enquire-container">
+            <form action="https://formspree.io/xgepevqo" method="POST" class="enquire-form">
+                <input type="text" id="name" name="name" placeholder="Name" class="enquire-child">
+                <input type="text" id="phone" name="phone" placeholder="Phone" class="enquire-child">
+                <input type="email" id="email" name="email" placeholder="Email" class="enquire-child">
+                <select class="enquire-child">
+                    <option value="" disabled selected>Select your Project</option>
+                    <option value="Manyam Sky Park">Manyam Sky Park</option>
+                    <option value="Trivak Wind Walk">Trivak Wind Walk</option>
+                    <option value="Urban Village Layout">Urban Village Layout</option>
+                    <option value="Sai Orchid">Sai Orchid</option>
+                </select>
+                <input type="text" id="message" name="message" placeholder="Message" class="enquire-child">
+                <button class="sticky-form-button enquire-child" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- NavBar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"
+                        style="color: white;"></a>
+                <div class="button"><a class="btn-open" href="#"></a></div>
+            </div>
+        </nav>
+    </div>
+    <!-- Menu -->
+    <div class="overlay">
+        <div class="wrap">
+            <ul class="wrap-nav">
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="manyamSkyPark.html">Manyam Sky Park</a></li>
+                        <li><a href="trivakWindWalk.html">Trivak Wind Walk</a></li>
+                        <li><a href="urbanVillageLayout.html">Urban Village Layout</a></li>
+                        <li><a href="saiOrchid.html">Sai Orchid</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Join Us</a>
+                    <ul>
+                        <li><a href="contact.html">Partner</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="social"><a href="http://mario-loncarek.from.hr/">
+                    <div class="social-icon"><i class="fa fa-facebook"></i></div>
+                </a><a href="#">
+                    <div class="social-icon"><i class="fa fa-twitter"></i></div>
+                </a><a href="#">
+                    <div class="social-icon"><i class="fa fa-instagram"></i></div>
+                </a><a href="#">
+                    <div class="social-icon"><i class="fa fa-youtube"></i></div>
+                </a></div>
+        </div>
+    </div>
+    <!-- photo bg -->
+    <section class="hero bg-cover bg-position py-8" style="background: url(images/building.jpg)">
+        <div class="dark-overlay dark-overlay-lighter py-5">
+            <div class="overlay-content">
+                <div class="container py-5 index-forward text-white">
+                    <h1>Projects</h1>
+                    <!-- Breadcrumb-->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-none mb-0 p-0">
+                            <li class="breadcrumb-item pl-0"><a href="index.html"> <i
+                                        class="fa fa-home mr-2"></i>Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- completed and ongoing projects -->
+    <div class="project-cards">
+        <div class="menu pt-3">
+            <a class="btn btn-primary showSingle" target="1">Ongoing</a>
+            <a class="btn btn-primary showSingle" target="2">Completed</a>
+        </div>
+        <section id="team" class="pb-5"></section>
+        <div id="div1" class="container targetDiv">
+            <div class="row">
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="./images/manyam/manyam4.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Manyam Sky Park</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Manyam Sky Park</h4>
+                                        <p class="card-text">Surabhi Layout, Jakkur Road, Yelhanka Old Town, Bengaluru
+                                            North <br>
+                                            1658 Sq.ft to 3300 Sq.ft <br>
+                                            82 Lakhs to 1 .4 Cr *
+                                        </p>
+                                        <a href="manyamSkyPark.html" class="btn btn-primary btn-sm text-white"><i
+                                                class="fa fa-plus text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/trivakWindWalk/trivak.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">trivak wind walk project</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">trivak wind walk project</h4>
+                                        <p class="card-text">Veerasagara, Attur layout Road, Yelhanka New Town,
+                                            Bengaluru North <br>
+                                            1440 Sq.ft to 1884 Sq.ft <br>
+                                            73 Lakhs to 95 Lakhs *
+                                        </p>
+                                        <a href="trivakWindWalk.html" class="btn btn-primary btn-sm text-white"><i
+                                                class="fa fa-plus text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/urbanVillage/urban7.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">urban village layout project</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">urban village layout project</h4>
+                                        <p class="card-text">Chikkajala Village, 2 Km from Devanahalli Airport Road
+                                            ,Bengaluru <br> 2400 Sq.ft<br>72 lacs
+                                        </p>
+                                        <a href="urbanVillageLayout.html" class="btn btn-primary btn-sm text-white"><i
+                                                class="fa fa-plus text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/saiOrchid/sai2.jpg" alt="card image"></p>
+                                        <h4 class="card-title">sai Orchid</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">sai Orchid</h4>
+                                        <p class="card-text">Surabhi Layout, Jakkur Road, Yelhanka Old Town, Bengaluru
+                                            <br>367 sqft to 3300 sqft <br>20* Lakhs to 1.4* Cr
+                                        </p>
+                                        <a href="saiOrchid.html" class="btn btn-primary btn-sm text-white"><i
+                                                class="fa fa-plus text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+            </div>
+        </div>
+        <!-- completed -->
+        <div id="div2" class="container targetDiv">
+            <div class="row">
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/ramanashree.jpg"
+                                                alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Ramanashree Blue Sky Residency</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Ramanashree Blue Sky Residency</h4>
+                                        <p class="card-text">Mahogani Street, Ramanashree California Gardens, Yelhanka
+                                            New Town, Bengaluru <br>
+                                            1025 Sqft to 1500 Sqft <br>
+                                            45* Lakhs to 70* Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/ramanashreeSSK.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Ramanashree SSK Residency</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Ramanashree SSK Residency</h4>
+                                        <p class="card-text">Mahogani Street, Ramanashree California Gardens, Yelhanka
+                                            New Town, Bengaluru <br>
+                                            1090 Sqft to 1560 Sqft <br>
+                                            45* Lakhs to 80* Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/KLSRRegalia.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">KLSR Regalia</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">KLSR Regalia</h4>
+                                        <p class="card-text">Amruthahalli main Road
+                                            <br> Possession - 2006.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/saiSumuka.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Sai Sumukha Swiss Lights</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sai Sumukha Swiss Lights</h4>
+                                        <p class="card-text">JP Nagar, 7th Phase, Bangalore<br>
+                                            Completed - Apr'18
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="images/completedProjects/ramanashreeGreenWoods.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Ramanashree Bluesky Green Woods</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Ramanashree Bluesky Green Woods</h4>
+                                        <p class="card-text">Ramanshree Nagar, Gottigere<br>
+                                            Possession - 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/SVSubhogitha.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">SV Subhogitha</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">SV Subhogitha</h4>
+                                        <p class="card-text">8th Phase, JP Nagar, Bangalore South<br>
+                                            Possession - 2016
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/spaceVision.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Space Vision - Green Acres</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Space Vision - Green Acres</h4>
+                                        <p class="card-text">Opposite to Polepally SEZ, Bangalore - Hyd Route
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/diamonUshus.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Diamond Ushus</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Diamond Ushus</h4>
+                                        <p class="card-text">Near Gear International School, Sarjapur Main Road<br>
+                                            Sold - 12,000 sft
+                                            <br>Completed - 2008
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/mahathaeTownship.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Mahathae Township</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Mahathae Township</h4>
+                                        <p class="card-text">Mothi Ghanpur Village, Near Shadnagar, Hyderabad<br>
+                                            Sold - 22,00,000 sft
+                                            <br>Completed - 2018
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/pavanBrindavan.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Pavan Brundavan</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Pavan Brundavan</h4>
+                                        <p class="card-text">NH-207, Sarjapur Road, Bangalore<br>
+                                            Sold - 5,00,000 sft
+                                            <br>Completed - 2010
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/MSKNandi.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">MSK Nandi View</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">MSK Nandi View</h4>
+                                        <p class="card-text">Near Hotel Gangothri, Devanhalli Road, Bangalore<br>
+                                            Sold - All
+                                            <br>Completed - 2010
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/commanders.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Commanders 7th Avenue</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Commanders 7th Avenue</h4>
+                                        <p class="card-text">Chikkaballapur, Nandi Hills, Bangalore<br>
+                                            Sold - all
+                                            <br>Completed - 2013
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/completedProjects/vijetha.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Vijetha Smart City</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Vijetha Smart City</h4>
+                                        <p class="card-text">Chikkaballapur, Bangalore<br>
+                                            Sold - All
+                                            <br>Completed - 2015
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+            </div>
+        </div>
+        </section>
+    </div>
+    <!-- Contact us -->
+    <footer>
+        <div class="image-box">
+            <div class="image-box__background" style="--image-url: url(https://picsum.photos/id/411/1370/400)">
+            </div>
+            <div class="image-box__overlay"></div>
+            <div class="image-box__content">
+                <div class="container border-top border-bottom py-4">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 footer-about wow fadeInUp animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <h3>Enquire</h3>
+                            <form action="https://formspree.io/mjvpvkzj" class="footer-form d-flex flex-column"
+                                method="POST">
+                                <input type="text" id="name" name="name" placeholder="Name" class="w-75 p-2">
+                                <input type="text" id="phone" name="phone" placeholder="Phone" class="w-75 p-2">
+                                <input type="email" id="email" name="email" placeholder="Email" class="w-75 p-2">
+                                <button class="w-50 p-2 ml-1" style="cursor: pointer;" type="submit">Submit&nbsp;<i
+                                        class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown animated"
+                            style="visibility: visible; animation-name: fadeInDown;">
+                            <h3>Contact</h3>
+                            <p><i class="fa fa-map-marker"></i> #19 Manyam SkyPark, Surabhi Layout, Beside Vijaya Bank,
+                                Yelahanka, Bangalore-560064</p>
+                            <p><i class="fa fa-phone"></i> Phone: +91 9538684999</p>
+                            <p><i class="fa fa-envelope"></i> Email: <a
+                                    href="mailto:info@thanvibuildtech.com">info@thanvibuildtech.com</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 footer-social wow fadeInUp animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <h3>Follow us</h3>
+                            <p>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
