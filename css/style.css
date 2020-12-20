@@ -192,14 +192,17 @@ button:focus {
 }
 
 .btn-open:after {
-    color: #fff;
-    /* color: #111; */
+    color: #111;
     content: "\f0c9";
     font-family: "FontAwesome";
     transition-property: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
     -webkit-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
+}
+
+.home-menu-btn:after {
+    color: #fff;
 }
 
 .btn-open:hover:after {
@@ -372,9 +375,6 @@ button:focus {
 .footer-top {
     position: relative;
     padding: 60px 0;
-    /* background: #333; */
-    /* background: #000; */
-    /* background-image: url('https: //picsum.photos/id/411/1370/400'); */
     object-fit: cover;
     text-align: left;
     color: #aaa;
@@ -448,6 +448,15 @@ button:focus {
     color: #aaa;
     border-bottom: 1px dashed #666;
     text-decoration: none;
+}
+
+@media (max-width:992px) {
+    .footer-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* footer form */
@@ -1039,6 +1048,38 @@ p {
 
 .projects-para {
     line-height: 2;
+}
+
+.specs-image {
+    height: 500px;
+    width: 400px
+}
+
+.specs-image-sai {
+    height: 500px;
+    width: 80%
+}
+
+.specs-image-urban {
+    height: 500px;
+    width: 400px
+}
+
+@media (max-width:992px) {
+    .specs-image {
+        height: 100%;
+        width: 80%
+    }
+
+    .specs-image-sai {
+        height: 300px;
+        width: 100%
+    }
+
+    .specs-image-urban {
+        height: 100%;
+        width: 80%;
+    }
 }
 
 /* FontAwesome for working BootSnippet :> */
