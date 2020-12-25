@@ -63,6 +63,12 @@ body {
     background-color: #fff;
 }
 
+@media (min-width:992px) {
+    html {
+        width: 100vw;
+    }
+}
+
 /* Enquire form */
 .sticky-form {
     position: fixed;
@@ -636,7 +642,7 @@ ol.list-numbers li::before {
 
 .about-body {
     font-family: Lora;
-    background-image: linear-gradient(rgba(147, 236, 252, 0.301), rgba(157, 235, 192, 0.26)), url(../img/bg.jpg);
+    background-image: linear-gradient(rgba(147, 236, 252, 0.301), rgba(157, 235, 192, 0.26)), url(../images/bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover
@@ -817,7 +823,6 @@ p {
     margin-right: auto;
     margin-left: auto;
 } */
-
 .d-flex {
     display: flex !important;
 }
